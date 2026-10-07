@@ -1,0 +1,14 @@
+Phần 1: Câu lệnh
+Tạo cây thư mục:
+mkdir .\Farm-Manager\code\app
+mkdir .\Farm-Manager\database\db
+mkdir .\Farm-Manager\logs\guides
+Tạo 3 file:
+New-Item .\Farm-Manager\code\app\main.py, .\Farm-Manager\code\app\models.py, .\Farm-Manager\code\app\utils.py -ItemType File
+Sao chép thư mục logs:
+Copy-Item .\Farm-Manager\logs .\Farm-Manager\logs-backup -Recurse -Force
+-Recurse: sao chép cả thư mục con và file bên trong.
+-Force: cho phép ghi đè hoặc xử lý các file/thư mục đã tồn tại.
+Phần 2: Kiểm thử
+ls .\Farm-Manager
+Dùng .\ để sử dụng đường dẫn tương đối, không phụ thuộc vào ổ đĩa hoặc đường dẫn cố định.
